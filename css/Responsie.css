@@ -1,0 +1,133 @@
+@media (max-width: 1200px) {
+    .menu {
+        margin: 20px 180px 0 0;
+        margin-right: 130px;
+        width: 120%;
+        height: 20px;
+        gap: 2px;
+        flex-direction: row;
+        font-size: 15px;
+        align-items: normal;
+    }
+    
+    .header {
+        width: 70%;
+    }
+    
+    .main-navigation nav ul {
+        gap: 50px;
+    }
+    .logo img{
+     margin-right: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        margin-right: 20px;
+        /* flex-direction: row; */
+        /* align-items: normal; */
+        margin: 20px 180px 0 0;
+        /* margin-right: 130px; */
+        width: 150%;
+        height: 10px;
+        gap: 0.5px;
+        flex-direction: row;
+        font-size: 15px;
+        align-items: normal;
+    }
+    
+    .header {
+        width: 50%;
+        height: auto;
+        flex-direction: row;
+        font-weight: 1rem;
+    }
+    
+    .main-navigation nav {
+        margin-left: 20px;
+    }
+    
+    .main-navigation nav ul {
+        flex-direction: row;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+          margin: 10px 90px 0 0;
+          /* margin-right: 130px; */
+          width: 350%;
+          height: 10px;
+          gap: 2px;
+          flex-direction: row;
+          font-size: 15px;
+          align-items: normal;
+    }
+    
+    .header {
+        width: 130%;
+    }
+    
+    .main-navigation nav {
+        margin-left: 10px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        margin-right: 10px;
+    }
+    
+    .header {
+        width: 95%;
+    }
+    
+    .main-navigation nav ul li {
+        font-size: 1.2em;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* Fries responsive */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fries {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .fries .image img {
+    max-width: 100%;
+  }
+}
+/* Optional: Responsive styles
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo {
+    position: static;
+    transform: none;
+    margin-bottom: 15px;
+  }
+  
+  .main-navigation nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-navigation nav ul li {
+    margin: 10px 0;
+  }
+} */
