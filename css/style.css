@@ -748,10 +748,11 @@ footer .contact a:hover {
   text-align: left;
 }
 .col1 p,
-.col1 li {
+.col1  ul li {
   font-size: 22px;
   color: #333;
   margin-bottom: 6px;
+  list-style: none;
 }
 
 .pa p{
