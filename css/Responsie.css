@@ -1,133 +1,163 @@
-@media (max-width: 1200px) {
-    .menu {
-        margin: 20px 180px 0 0;
-        margin-right: 130px;
-        width: 120%;
-        height: 20px;
-        gap: 2px;
-        flex-direction: row;
-        font-size: 15px;
-        align-items: normal;
-    }
-    
-    .header {
-        width: 70%;
-    }
-    
-    .main-navigation nav ul {
-        gap: 50px;
-    }
-    .logo img{
-     margin-right: 80px;
-    }
-}
-
-@media (max-width: 992px) {
-    .menu {
-        margin-right: 20px;
-        /* flex-direction: row; */
-        /* align-items: normal; */
-        margin: 20px 180px 0 0;
-        /* margin-right: 130px; */
-        width: 150%;
-        height: 10px;
-        gap: 0.5px;
-        flex-direction: row;
-        font-size: 15px;
-        align-items: normal;
-    }
-    
-    .header {
-        width: 50%;
-        height: auto;
-        flex-direction: row;
-        font-weight: 1rem;
-    }
-    
-    .main-navigation nav {
-        margin-left: 20px;
-    }
-    
-    .main-navigation nav ul {
-        flex-direction: row;
-        gap: 5px;
-    }
-}
-
+/* Responsive Styles */
+/* Mobile Devices (up to 767px) */
 @media (max-width: 768px) {
-    .menu {
-          margin: 10px 90px 0 0;
-          /* margin-right: 130px; */
-          width: 350%;
-          height: 10px;
-          gap: 2px;
-          flex-direction: row;
-          font-size: 15px;
-          align-items: normal;
-    }
-    
-    .header {
-        width: 130%;
-    }
-    
-    .main-navigation nav {
-        margin-left: 10px;
-    }
-    
-    .logo img {
-        height: 40px;
-    }
-}
-
-@media (max-width: 576px) {
-    .menu {
-        margin-right: 10px;
-    }
-    
-    .header {
-        width: 95%;
-    }
-    
-    .main-navigation nav ul li {
-        font-size: 1.2em;
-    }
-    
-    .logo img {
-        height: 40px;
-    }
-}
-
-/* Fries responsive */
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .fries {
-    flex-direction: column;
-    gap: 20px;
+  body {
+    width: 100px;
   }
-  
-  .fries .image img {
-    max-width: 100%;
+  /* Header and Navigation */
+  .header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 12px;
   }
-}
-/* Optional: Responsive styles
-@media (max-width: 768px) {
   .container {
+    flex-direction: row;
+    width: 250%;
+    height: 50%;
+    /* padding: 12px; */
+  }
+
+  .main-navigation ul {
+    flex-direction: row;
+    gap: 2px;
+    padding: 5px;
+  }
+
+  .main-navigation ul li a {
+    padding: 5px;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .logo img {
+    margin-bottom: 45px;
+    gap: 5rem;
+  }
+
+  /* Intro Section */
+}
+/* * Desktop Layout (1024px+) */
+@media (min-width: 1024px) {
+  .intro {
+    width: 100%;
+  }
+  .text-overlay {
+    padding: 1rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 4.5rem;
+  }
+}
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+  .img img {
+    max-width: 900px;
+    /* margin: 0 auto; */
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  .img img {
+    height: 100px;
+  }
+
+  .text-overlay {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* translate: transform(3%, -65%); */
+    color: #67523f;
+    margin-left: 650px;
+    width: 150px;
   }
-  
-  .logo {
-    position: static;
-    transform: none;
-    margin-bottom: 15px;
+
+  .text-overlay h2 {
+    /* display: block; */
+    width: 300px;
+    font-size: 0.5rem;
+    line-height: 0.5;
   }
-  
-  .main-navigation nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .main-navigation nav ul li {
+  .text-overlay b {
+    display: block;
     margin: 10px 0;
+    width: 300px;
+    line-height: 0.8;
+    color: #67523f;
+    font-size: 1rem;
   }
-} */
+  .text-overlay p {
+    display: block;
+    font-size: 1rem;
+    color: var(--pr-nav-color);
+    margin: 10px 0 20px;
+    width: 300px;
+    line-height: 1;
+    font-size: 6px;
+  }
+  .read-more {
+    padding: 10px 20px;
+    background-color: var(--pr-nav-color);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .read-more:hover {
+    background-color: var(--pr-hvr-color);
+  }
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .icons-msg {
+    flex-direction: column;
+    gap: 40px;
+    /* align-items: center; */
+    align-items: self-start;
+  }
+
+  .icons-links {
+    width: 100px;
+    height: 100px;
+    padding: 0 0 0 260px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    /* margin-left: 650px; */
+    justify-content: center;
+    gap: 8rem;
+  }
+  #box2{
+    padding: 2rem;
+    gap: 0 0 0 8rem;
+  }
+  #box3{
+    padding: 0 0 0 6rem;
+    gap: 0 0 0 6px;
+  }
+
+  .box-conatiner {
+    width: 50%;
+  }
+
+  .box-conatiner div {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons-links img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .box-conatiner p {
+    font-size: 0.9rem;
+  }
+}
