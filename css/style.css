@@ -18,36 +18,7 @@ body {
   background-color: var(--pr-bg-color);
   font-family: "Poppins", sans-serif;
 }
-/* scroll button */
-/* .scroll-up-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: crimson;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-.scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-}
-.scroll-up-btn:hover {
-  filter: brightness(90%);
-} */
 /* menu btn styling */
-
 .header {
   /* background-color: #fdd450; yellow background */
   padding: 10px 0;
@@ -221,21 +192,17 @@ body {
   }
 }
 .img-container {
-  max-width: 1320px;
-  width: 100%;
-  padding: 6%;
+  max-width: 1200px;
   position: relative;
-  /* width: 100%; */
+  width: 100%;
   margin-top: 70px;
-  /* padding: -20px; */
-  .img img {
-    width: 2100px;
-    /* margin: 0 auto; */
+}
+.img img {
+    width: 1920px;
     height: auto;
     display: block;
     /* padding: -3px; */
   }
-}
 /* Text over on the image */
 .text-overlay-2 {
   position: absolute;
@@ -249,7 +216,7 @@ body {
 }
 /* button styling */
 .promo {
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: var(--pr-nav-color);
   color: #fff;
   border-radius: 5px;
@@ -262,15 +229,6 @@ body {
   background-color: var(--pr-bg-color);
   color: var(--pr-nav-color);
 }
-/* Intro Section End */
-/* burgeer start */
-/* style.css */
-/* .slide{
-     background-color:var(--pr-orgbg-color);
-     max-width: 1200px;
-     padding: 10px;
-     margin: 0;
-} */
 
 .image {
   margin: 0;
