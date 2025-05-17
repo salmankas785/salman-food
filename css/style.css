@@ -2,7 +2,7 @@
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
-  /* max-width: 1200px; */
+  max-width: 1320px;
 }
 :root {
   --pr-bg-color: #f6d55b;
@@ -10,10 +10,10 @@
   --pr-hvr-color: #ff5722;
   --pr-orgbg-color: #ff703c;
 }
-section {
+/* section {
   margin: 0;
   padding: 0;
-}
+} */
 body {
   background-color: var(--pr-bg-color);
   font-family: "Poppins", sans-serif;
@@ -25,7 +25,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1320px;
+  /* margin: 0 auto; */
+  width: 100%;
   /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
@@ -35,10 +37,10 @@ body {
 
 .main-navigation ul {
   display: flex;
-  gap: 60px;
-  list-style: none;
-  /* width: 100%; */
-  /* margin: 0; */
+  gap: 50px;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
   padding: 0;
   background-color: #6d4c41; /* brown bar */
   padding: 15px 30px;
@@ -74,18 +76,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
   /* padding: 50px; */
   /* margin-bottom: 200px; */
   background-color: var(--pr-bg-color);
 }
 .img {
   position: relative;
+  /* margin: 0 auto; */
   /* display: block; */
-  width: 50%;
+  width: 100%;
   /* height: auto; */
 }
 .img img {
-  width: 1200px;
+  width: 1320px;
+  width: 200%;
   /* opacity: 1; */
   height: 500px;
 }
@@ -93,7 +98,7 @@ body {
 .text-overlay {
   position: absolute;
   text-align: center;
-  margin-left: 600px;
+  margin-left: 250px;
   top: 15%;
   left: 40%;
   transform: translate(-50%, 0);
@@ -119,9 +124,10 @@ body {
   font-size: 1rem;
 }
 .text-overlay p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: var(--pr-nav-color);
-  margin: 10px 0 20px;
+  margin: 0 0 0 20px;
+  text-align: center;
   line-height: 1;
 }
 /* button styling */
@@ -192,31 +198,34 @@ body {
   }
 }
 .img-container {
-  max-width: 1200px;
+  max-width: 1350px;
   position: relative;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 50px;
 }
-.img img {
-    width: 1920px;
-    height: auto;
-    display: block;
-    /* padding: -3px; */
+.imgs {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10rem;
   }
 /* Text over on the image */
 .text-overlay-2 {
-  position: absolute;
+  position: relative;
   text-align: center;
   margin-left: 400px;
   top: 45%;
   left: 40%;
-  transform: translate(-50%, 0);
+  transform: translate(-75%, 0);
   color: #67523f;
-  width: 50%;
+  width: 100%;
 }
 /* button styling */
 .promo {
-  padding: 8px 16px;
+  padding: 4px 8px;
+  align-items: center;
   background-color: var(--pr-nav-color);
   color: #fff;
   border-radius: 5px;
