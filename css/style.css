@@ -78,14 +78,14 @@ body {
   /* margin-bottom: 200px; */
   background-color: var(--pr-bg-color);
 }
-.img {
+.imgs {
   position: relative;
   /* display: block; */
   width: 50%;
   /* height: auto; */
 }
 .img img {
-  width: 1200px;
+  width: 1500px;
   /* opacity: 1; */
   height: 500px;
 }
@@ -94,9 +94,9 @@ body {
   position: absolute;
   text-align: center;
   margin-left: 600px;
-  top: 15%;
+  top: 5%;
   left: 40%;
-  transform: translate(-50%, 0);
+  /* transform: translate(-50%, 0); */
   color: #67523f;
   width: 80%;
 }
@@ -143,6 +143,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   gap: 10px;
+  margin-left: 15.5rem;
 }
 .icons-links {
   display: flex;
