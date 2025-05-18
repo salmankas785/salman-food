@@ -147,7 +147,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .icons-links {
   display: flex;
