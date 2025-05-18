@@ -2,7 +2,7 @@
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1320px;
+  /* max-width: 1320px; */
 }
 :root {
   --pr-bg-color: #f6d55b;
@@ -45,7 +45,6 @@ body {
   background-color: #6d4c41; /* brown bar */
   padding: 15px 30px;
   /* border-radius: 5px; */
-  transition: transform 0.5 ease-in;
 }
 
 .main-navigation ul li a {
@@ -56,12 +55,13 @@ body {
   padding: 40px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: transform 0.5 ease-in;
 }
 
 .logo img {
   height: 50px;
 }
-.main-navigation ul li:hover{
+.main-navigation ul li a:hover{
   transform: scale(1.02);
   color: var(--pr-hvr-color);
 }
@@ -90,7 +90,7 @@ body {
 }
 .img img {
   width: 1320px;
-  width: 200%;
+  width: 100%;
   /* opacity: 1; */
   height: 500px;
 }
@@ -107,35 +107,52 @@ body {
 }
 .text-overlay h1 {
   font-size: 2.5rem;
+  width: 50%;
+  top: 20%;
+  text-align: center;
+  margin-left: 450px;
+  line-height: 1.8;
   color: #ff5722; /* orange for h1*/
   /* font-weight: 900; */
   text-transform: uppercase;
 }
 .text-overlay h2 {
   font-size: 72px;
+  width: 50%;
+  text-align: center;
+  margin-left: 450px;
+  line-height: 1;
   /* font-weight: 1100; */
   color: #333;
 }
 .text-overlay b {
   display: block;
   margin: 10px 0;
+  width: 50%;
+  text-align: center;
+  margin-left: 450px;
   line-height: 0.8;
   color: #67523f;
   font-size: 1rem;
 }
 .text-overlay p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--pr-nav-color);
-  margin: 0 0 0 20px;
+  width: 50%;
+  text-align: center;
+  margin-left: 450px;
+  /* margin: 10px 0 20px; */
   text-align: center;
   line-height: 1;
 }
 /* button styling */
 .read-more {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: var(--pr-nav-color);
   color: #fff;
   border-radius: 5px;
+  text-align: center;
+  align-items: center;
   border: none;
   font-weight: bold;
   cursor: pointer;
@@ -143,6 +160,7 @@ body {
 }
 .read-more:hover {
   background-color: var(--pr-hvr-color);
+  color: var(--pr-hvr-color);
 }
 .icons-msg {
   display: flex;
@@ -197,11 +215,13 @@ body {
     color: #ff5722;
   }
 }
+/* Image Sections */
 .img-container {
-  max-width: 1350px;
-  position: relative;
   width: 100%;
-  margin-top: 50px;
+  max-width: 1351px;
+  background-position: center;
+  margin-top: 30px;
+  position: relative;
 }
 .imgs {
     position: relative;
@@ -210,12 +230,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 10rem;
+    min-height: 200px;
   }
 /* Text over on the image */
 .text-overlay-2 {
   position: relative;
   text-align: center;
   margin-left: 400px;
+  /* max-width: 1320px; */
   top: 45%;
   left: 40%;
   transform: translate(-75%, 0);
@@ -224,7 +246,7 @@ body {
 }
 /* button styling */
 .promo {
-  padding: 4px 8px;
+  padding: 12px 24px 12px 24px;
   align-items: center;
   background-color: var(--pr-nav-color);
   color: #fff;
