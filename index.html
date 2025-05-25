@@ -8,225 +8,253 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- <link rel="stylesheet" href="css/Responsie.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Food Resturant</title>
   </head>
   <body>
     <main>
-      <div class="container">
         <!-- Header Section -->
-        <header class="header">
-            <div class="main-navigation">
-              <nav>
-                <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#aboutus">About Us</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
+        <div class="max-width">
+          <div class="scroll-up-btn">
+          <i class="fas fa-angle-up"></i>
+          </div>
+        </div>
+        <nav class="navbar">
+              <div class="max-width">
+                  <div class="logo"><a href="index.html"><img src="img/bran-logo.png" alt="this is image" width="80px"
+                    height="40px"></span></a></div>
+                  <ul class="menu">
+                        <li><a href="#home" class="menu-btn">Home</a></li>
+                        <li><a href="#about" class="menu-btn">About</a></li>
+                        <li><a href="#services" class="menu-btn">Services</a></li>
+                        <!-- <li><a href="#skills" class="menu-btn">Skills</a></li>
+                        <li><a href="#teams" class="menu-btn">Teams</a></li> -->
+                        <li><a href="#contact" class="menu-btn">Contact</a></li>
+                  </ul>
+                  <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                  </div>
+              </div>
+        </nav>
+        <!-- Header section end -->
+        <!-- Intro Section Start -->
+        <!-- home Section start -->
+      <section id="home" >
+        <div class="max-width">
+          <div class="intro">
+          <div class="img">
+            <!-- <center> -->
+              <img src="img/intro3.png" alt="intro3-image" class="intro3-image" />
+            <div class="text-overlay">
+              <h1>Opening</h1>
+              <h2>Resto</h2>
+              <b>27 May 2024 | 4:00PM-to-2:00AM </b>
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do
+                elumsod tempor incididunt ut labore et dolore magna aliqua"
+              </p>
+              <button class="read-more">Read More</button>
+            <!-- </center> -->
             </div>
-            <div class="logo">
-              <a href="index.html">
-                <img src="img/bran-logo.png" alt="brand-logo name" />
-              </a>
-            </div>
-        </header>
-      <!-- Header section end -->
-    <!-- Intro Section Start -->
-     <!-- home Section start -->
-    <section id="home">
-      <div class="intro">
-        <div class="img">
-          <!-- <center> -->
-            <img src="img/intro3.png" alt="intro3-image" class="intro3-image" />
-          <div class="text-overlay">
-            <h1>Opening</h1>
-            <h2>Resto</h2>
-            <b>27 May 2024 | 4:00PM-to-2:00AM </b>
-            <p>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do
-              elumsod tempor incididunt ut labore et dolore magna aliqua"
-            </p>
-            <button class="read-more">Read More</button>
-          <!-- </center> -->
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Intro Section End -->
-    <!-- Icons Display section Start -->
-    <section>
-      <div class="icons-msg">
-        <div class="icons-links">
-          <div id="img1">
-            <a href="index.html"
-              ><img src="img/call 2.png" alt="Calling name"
-            /></a>
-          </div>
-          <div id="img2">
-            <a href="index.html"><img src="img/home.png" alt="Home name" /></a>
-          </div>
-          <div id="img3">
-            <a href="index.html"><img src="img/mail.png" alt="Mail name" /></a>
-          </div>
-        </div>
-        <div class="box-container">
-          <div id="box1">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-              quisquam saepe maxime labore culpa distinctio reiciendis, eum
-              accusantium quaerat libero necessitatibus exercitationem est
-              mollitia autem. Voluptas culpa necessitatibus nam alias.
-            </p>
-          </div>
-          <div id="box2">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-              quisquam saepe maxime labore culpa distinctio reiciendis, eum
-              accusantium quaerat libero necessitatibus exercitationem est
-              mollitia autem. Voluptas culpa necessitatibus nam alias.
-            </p>
-          </div>
-          <div id="box3">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-              quisquam saepe maxime labore culpa distinctio reiciendis, eum
-              accusantium quaerat libero necessitatibus exercitationem est
-              mollitia autem. Voluptas culpa necessitatibus nam alias.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="img-container">
-        <div class="imgs" style="background-image: url(img/orange-bg-orjpg_06.jpg);">
-          <div class="text-overlay-2">
-            <button class="promo">Promo</button>
-          </div>
-        </div>
-      </div>
-      <div class="image">
-        <img src="img/buger.png" alt="buger" class="buger" />
-      </div>
-      <div class="para">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
-          ipsa unde cum error architecto dignissimos minus perferendis,
-          voluptate rerum ut, reprehenderit in pariatur, autem veniam quisquam
-          blanditiis perspiciatis cupiditate? Assumenda aliquam veritatis
-          laudantium repellat adipisci facere illo, ex praesentium hic vel
-          exercitationem perspiciatis nulla quod doloremque, deserunt,
-          architecto et cumque. Eius voluptatibus modi enim quae eligendi ipsam
-          dicta voluptate inventore, aliquid nemo iusto, dolore fugiat? Hic,
-          neque. Exercitationem est voluptas perferendis doloremque officia
-          minima quam voluptate omnis aliquam? Sapiente quibusdam, ut iste minus
-          reprehenderit tempora mollitia commodi facilis, facere nihil saepe
-          quam temporibus. Quaerat, pariatur rem beatae et aliquam non.
-        </p>
-      </div>
-      <button class="read-more">Read More</button>
-    </section>
-     <!-- home Section end -->
-     <!-- About Section start -->
-    <section id="aboutus">
-      <div class="imge">
-        <img
-          src="img/bg.png"
-          alt="orange-bg-orjpg_06"
-          class="orange-bg-orjpg_06"
-        />
-        <div class="text-overlay-3">
-          <h2>About</h2>
-          <h3>Resto</h3>
-        </div>
-      </div>
-      <div class="para-2">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
-          ipsa unde cum error architecto dignissimos minus perferendis,
-          voluptate rerum ut, reprehenderit in pariatur, autem veniam quisquam
-          blanditiis perspiciatis cupiditate? Assumenda aliquam veritatis
-          laudantium repellat adipisci facere illo, ex praesentium hic vel
-          exercitationem perspiciatis nulla quod doloremque, deserunt,
-          architecto et cumque. Eius voluptatibus modi enim quae eligendi ipsam
-          dicta voluptate inventore, aliquid nemo iusto, dolore fugiat? Hic,
-          neque. Exercitationem est voluptas perferendis doloremque officia
-          minima quam voluptate omnis aliquam? Sapiente quibusdam, ut iste minus
-          reprehenderit tempora mollitia commodi facilis, facere nihil saepe
-          quam temporibus. Quaerat, pariatur rem beatae et aliquam non.
-          Perferendis animi quibusdam adipisci architecto eligendi non eius
-          minima incidunt odit odio tempora enim, molestias officiis delectus,
-          excepturi ex numquam. 
-        </p>
-      <button class="read-more">Read More</button>
-      </div>
-      <div class="fries">
-        <div class="image">
-          <img src="img/fries.png" alt="fries" class="fries">
-        </div>
-        <div class="content">
-          <h2>FRENCH FRIES</h2>
-          <h2>$ 2.99</h2>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illo obcaecati a veritatis et maxime labore ipsum molestiae sequi similique necessitatibus numquam modi assumenda, reprehenderit explicabo error cupiditate quod quae! Suscipit veniam quod iusto sapiente fugiat incidunt quisquam tempore minus vel doloremque nobis asperiores, dolorem, voluptatibus veritatis ex iste iure hic? Suscipit, repudiandae unde recusandae quas beatae eligendi, labore in placeat rerum omnis expedita tempore excepturi voluptatibus ratione quasi nostrum.</P>
-        </div>
-      </div>
-    </section>
-     <!-- About Section end -->
-     <!-- Service Section start -->
-    <section id="services" class="active">
-        <div class="images">
-          <img src="img/offer2.png" alt="offer" class="offer">
-        </div>
-        <div class="text-overlay-4">
-          <div class="heading-wrapper">
-            <h2>SPECIAL</h2>
-            <h3>OFFER</h3>
-          </div>
-          <h4>10%</h4>
-        </div>
-    </section>
-    <section>
-      <div class="offers">
-        <div class="offer-item"><img src="img/hot-dog.png" alt="hotdog" class="hotdog"><b>Hot Dog</b></img></div>
-        <div class="offer-item"><img src="img/burger.png" alt="burger" class="burger"><b>Burger</b></img></div>
-        <div class="offer-item"><img src="img/mc-chkn.png" alt="mc-chkn" class="mc-chkn"><b>MC-Chiken</b></img></div>
-        <div class="offer-item"><img src="img/cheese.png" alt="cheese" class="chesse"><b>Chesse Buger</b></img></div>
-        <div class="offer-item"><img src="img/frenc.png" alt="frenc" class="frenc"><b>French Fries</b></img></div>
-        <div class="offer-item"><img src="img/big-mac.png" alt="big-mac" class="big-mac"><b>Big-Mac</b></img></div>
-      </div>
-    </section>
-    <section>
-      <div class="banner">
-        <div class="images">
-          <img src="img/offere22.png" alt="offer22" class="offer22">
-        </div>
-        <div class="dscunt">
-          <h4>DISCOUNT</h4>
-          <b>10%</b>
-          <p>1 May 2020 | 8AM to 8PM</p>
-        </div>
-      </div>
-    </section>
-     <!-- Service Section end -->
-     <!-- Contact Section start -->
-      <section id="contact">
-        <div class="contact-us">
-          <h2>Delivery Order</h2>
-          <h3>+555-5555</h3>
-          <b>Dont Miss our promo</b>
-          <div class="search-conatiner">
-          <input type="search" name="search" id="search"/><i class="fas fa-search icon"></i>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate dignissimos eligendi molestiae ea, a aspernatur itaque autem ipsum inventore quia, repudiandae fugit excepturi vel animi, ut quidem molestias! Excepturi.</p>
         </div>
       </section>
+      <!-- Intro Section End -->
+      <!-- Icons Display section Start -->
+      <section>
+        <div class="max-width">
+          <div class="icons-msg">
+          <div class="icons-links">
+            <div id="img1">
+              <a href="index.html"
+                ><img src="img/call 2.png" alt="Calling name"
+              /></a>
+            </div>
+            <div id="img2">
+              <a href="index.html"><img src="img/home.png" alt="Home name" /></a>
+            </div>
+            <div id="img3">
+              <a href="index.html"><img src="img/mail.png" alt="Mail name" /></a>
+            </div>
+          </div>
+          <div class="box-container">
+            <div id="box1">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+                quisquam saepe maxime labore culpa distinctio reiciendis, eum
+                accusantium quaerat libero necessitatibus exercitationem est
+                mollitia autem. Voluptas culpa necessitatibus nam alias.
+              </p>
+            </div>
+            <div id="box2">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+                quisquam saepe maxime labore culpa distinctio reiciendis, eum
+                accusantium quaerat libero necessitatibus exercitationem est
+                mollitia autem. Voluptas culpa necessitatibus nam alias.
+              </p>
+            </div>
+            <div id="box3">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+                quisquam saepe maxime labore culpa distinctio reiciendis, eum
+                accusantium quaerat libero necessitatibus exercitationem est
+                mollitia autem. Voluptas culpa necessitatibus nam alias.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section>
+        <div class="max-width">
+          <div class="img-container">
+          <div class="imgs" style="background-image: url(img/orange-bg-orjpg_06.jpg);">
+            <div class="text-overlay-2">
+              <button class="promo">Promo</button>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="img/buger.png" alt="buger" class="buger" />
+        </div>
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+            ipsa unde cum error architecto dignissimos minus perferendis,
+            voluptate rerum ut, reprehenderit in pariatur, autem veniam quisquam
+            blanditiis perspiciatis cupiditate? Assumenda aliquam veritatis
+            laudantium repellat adipisci facere illo, ex praesentium hic vel
+            exercitationem perspiciatis nulla quod doloremque, deserunt,
+            architecto et cumque. Eius voluptatibus modi enim quae eligendi ipsam
+            dicta voluptate inventore, aliquid nemo iusto, dolore fugiat? Hic,
+            neque. Exercitationem est voluptas perferendis doloremque officia
+            minima quam voluptate omnis aliquam? Sapiente quibusdam, ut iste minus
+            reprehenderit tempora mollitia commodi facilis, facere nihil saepe
+            quam temporibus. Quaerat, pariatur rem beatae et aliquam non.
+          </p>
+        </div>
+        <button class="read-more">Read More</button>
+        </div>
+      </section>
+      <!-- home Section end -->
+      <!-- About Section start -->
+      <section id="about">
+        <div class="max-width">
+          <div class="imge">
+          <img
+            src="img/bg.png"
+            alt="orange-bg-orjpg_06"
+            class="orange-bg-orjpg_06"
+          />
+          <div class="text-overlay-3">
+            <h2>About</h2>
+            <h3>Resto</h3>
+          </div>
+        </div>
+        <div class="para-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+            ipsa unde cum error architecto dignissimos minus perferendis,
+            voluptate rerum ut, reprehenderit in pariatur, autem veniam quisquam
+            blanditiis perspiciatis cupiditate? Assumenda aliquam veritatis
+            laudantium repellat adipisci facere illo, ex praesentium hic vel
+            exercitationem perspiciatis nulla quod doloremque, deserunt,
+            architecto et cumque. Eius voluptatibus modi enim quae eligendi ipsam
+            dicta voluptate inventore, aliquid nemo iusto, dolore fugiat? Hic,
+            neque. Exercitationem est voluptas perferendis doloremque officia
+            minima quam voluptate omnis aliquam? Sapiente quibusdam, ut iste minus
+            reprehenderit tempora mollitia commodi facilis, facere nihil saepe
+            quam temporibus. Quaerat, pariatur rem beatae et aliquam non.
+            Perferendis animi quibusdam adipisci architecto eligendi non eius
+            minima incidunt odit odio tempora enim, molestias officiis delectus,
+            excepturi ex numquam. 
+          </p>
+        <button class="read-more">Read More</button>
+        </div>
+        <div class="fries">
+          <div class="image">
+            <img src="img/fries.png" alt="fries" class="fries">
+          </div>
+          <div class="content">
+            <h2>FRENCH FRIES</h2>
+            <h2>$ 2.99</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illo obcaecati a veritatis et maxime labore ipsum molestiae sequi similique necessitatibus numquam modi assumenda, reprehenderit explicabo error cupiditate quod quae! Suscipit veniam quod iusto sapiente fugiat incidunt quisquam tempore minus vel doloremque nobis asperiores, dolorem, voluptatibus veritatis ex iste iure hic? Suscipit, repudiandae unde recusandae quas beatae eligendi, labore in placeat rerum omnis expedita tempore excepturi voluptatibus ratione quasi nostrum.</P>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- About Section end -->
+      <!-- Service Section start -->
+      <section id="services" class="active">
+          <div class="max-width">
+            <div class="images">
+            <img src="img/offer2.png" alt="offer" class="offer">
+          </div>
+          <div class="text-overlay-4">
+            <div class="heading-wrapper">
+              <h2>SPECIAL</h2>
+              <h3>OFFER</h3>
+            </div>
+            <h4>10%</h4>
+          </div>
+          </div>
+      </section>
+      <section>
+        <div class="max-width">
+          <div class="offers">
+          <div class="offer-item"><img src="img/hot-dog.png" alt="hotdog" class="hotdog"><b>Hot Dog</b></img></div>
+          <div class="offer-item"><img src="img/burger.png" alt="burger" class="burger"><b>Burger</b></img></div>
+          <div class="offer-item"><img src="img/mc-chkn.png" alt="mc-chkn" class="mc-chkn"><b>MC-Chiken</b></img></div>
+          <div class="offer-item"><img src="img/cheese.png" alt="cheese" class="chesse"><b>Chesse Buger</b></img></div>
+          <div class="offer-item"><img src="img/frenc.png" alt="frenc" class="frenc"><b>French Fries</b></img></div>
+          <div class="offer-item"><img src="img/big-mac.png" alt="big-mac" class="big-mac"><b>Big-Mac</b></img></div>
+        </div>
+        </div>
+      </section>
+      <section>
+        <div class="max-width">
+          <div class="banner">
+          <div class="images">
+            <img src="img/offere22.png" alt="offer22" class="offer22">
+          </div>
+          <div class="dscunt">
+            <h4>DISCOUNT</h4>
+            <b>10%</b>
+            <p>1 May 2020 | 8AM to 8PM</p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- Service Section end -->
+      <!-- Contact Section start -->
+        <section id="contact">
+          <div class="max-width">
+            <div class="contact-us">
+            <h2>Delivery Order</h2>
+            <h3>+555-5555</h3>
+            <b>Dont Miss our promo</b>
+            <div class="search-conatiner">
+            <input type="search" name="search" id="search"/><i class="fas fa-search icon"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptate dignissimos eligendi molestiae ea, a aspernatur itaque autem ipsum inventore quia, repudiandae fugit excepturi vel animi, ut quidem molestias! Excepturi.</p>
+          </div>
+          </div>
+        </section>
     <!-- Contact Section end -->
     <!-- footer  Section start -->
     <footer>
-      <div class="footer">
+      <div class="max-width">
+        <div class="footer">
         <div class="col1">
           <b>About</b>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi maiores alias expedita non.
@@ -260,9 +288,9 @@
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
       </div>
+      </div>
     </footer>
-     </div>
     </main>
   </body>
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </html>

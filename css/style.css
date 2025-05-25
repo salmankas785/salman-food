@@ -9,59 +9,119 @@
   --pr-hvr-color: #ff5722;
   --pr-orgbg-color: #ff703c;
 }
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
 body {
   background-color: var(--pr-bg-color);
 }
-/* General Improvements */
-.container {
-  width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
-  /* padding: 0 20px; */
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--pr-bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pr-nav-colorr)
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pr-orgbg-color);
 }
 
-.header {
+/* all similar content styling codes */
+section {
+  padding: 50px 0;
+}
+.max-width {
+  max-width: 1350px;
+  /* padding: 0 80px; */
+  margin: auto;
+}
+/* navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  padding: 15px 0;
+  background: var(--pr-bg-color);
+}
+.navbar .max-width {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* padding: 10px 0; */
-  /* position: relative; */
+  justify-content: space-between;
 }
-
-/* Navigation Improvements */
-.main-navigation {
-  background-color: #6d4c41;
-  /* padding: 15px 30px; */
-  border-radius: 2px;
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
 }
-
-.main-navigation ul {
-  display: flex;
-  gap: 40px;
-  list-style-type: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #6d4c41; /* brown bar */
-  padding: 10px 20px;
+.navbar .logo a span {
+  color: var(--pr-nav-color);
+  transition: all 0.3s ease;
 }
-
-.main-navigation ul li a {
-  text-decoration: none;
-  color: #fdd450; /* yellow text inside brown */
-  font-size: 20px;
-  gap: 5rem;
-  padding: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: transform 0.5 ease-in;
+.navbar.sticky .logo a span {
+  color: #fff;
 }
-.logo img {
-  height: 50px;
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
 }
-.main-navigation ul li a:hover {
-  transform: scale(1.02);
+.navbar .menu li a {
+  display: block;
   color: var(--pr-hvr-color);
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: var(--pr-nav-color);
+}
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+/* menu btn styling */
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--pr-nav-color);
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: var(--pr-hvr-color);
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover {
+  filter: brightness(90%);
 }
 
 /* Intro Section Improvements */

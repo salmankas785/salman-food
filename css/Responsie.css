@@ -1,299 +1,139 @@
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  /* Adjustments for large tablets and small laptops */
-  .main-navigation ul {
-    gap: 20px;
-    padding: 10px 15px;
+/* responsive media query start */
+/* @media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
   }
-  
-  .main-navigation ul li a {
-    padding: 15px;
-    font-size: 18px;
+} */
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
   }
-  
-  .text-overlay {
-    left: 55%;
+  .img img{
+    height: 200px;
+    width: 200px;
   }
-  
-  .fries {
-    gap: 4rem;
-  }
-  
-  .fries .content p {
-    padding-right: 100px;
-  }
-  
-  .offers {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 992px) {
-  /* Tablet adjustments */
-  .header {
-    flex-direction: column;
-  }
-  
-  .logo {
-    margin-bottom: 15px;
-  }
-  
-  .main-navigation ul {
-    justify-content: center;
-  }
-  
-  .text-overlay {
-    position: static;
-    transform: none;
-    margin: 20px auto;
-    text-align: center;
-  }
-  
-  .img img {
-    height: 300px;
-  }
-  
-  .icons-links {
-    gap: 4rem;
-  }
-  
-  .box-container div {
-    max-width: 220px;
-  }
-  
-  .fries {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .fries .content p {
-    padding-right: 0;
-  }
-  
-  .banner {
-    flex-direction: column;
-    height: auto;
-  }
-  
-  .banner .images {
-    width: 100%;
-  }
-  
-  .banner .dscunt {
-    width: 100%;
-    height: auto;
-  }
-  
-  .footer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  /* Small tablets and large phones */
-  .main-navigation ul li a {
+  .text-overlay{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% -50%);
     padding: 10px;
-    font-size: 16px;
-  }
-  
-  .text-overlay h1 {
-    font-size: 2rem;
-  }
-  
-  .text-overlay h2 {
-    font-size: 2.8rem;
-  }
-  
-  .text-overlay p {
     width: 90%;
   }
-  
-  .icons-links {
-    gap: 3rem;
+  .text-overlay h1{
+    font-size: 2rem;
   }
-  
-  .box-container {
-    gap: 20px;
+  .text-overlay h2{
+    font-size: 2.5rem;
   }
-  
-  .box-container div {
-    flex: 1 1 250px;
-  padding: 15px;
-  font-size: 14px;
+  .text-overlay h1{
+    font-size: 1rem;
+    width: 90%;
   }
-  
-  .text-overlay-2 {
-    margin-left: 300px;
-  }
-  
-  .text-overlay-3 {
-    margin-left: 300px;
-  }
-  
-  .text-overlay-3 h2 {
-    font-size: 3rem;
-  }
-  
-  .text-overlay-3 h3 {
-    font-size: 4.5rem;
-  }
-  
-  #services .text-overlay-4 h2 {
-    font-size: 4.5rem;
-  }
-  
-  #services .text-overlay-4 h3 {
-    font-size: 4rem;
-  }
-  
-  #services .text-overlay-4 h4 {
-    font-size: 3.5rem;
-  }
-  
-  .contact-us h2 {
-    font-size: 48px;
-  }
-  
-  .contact-us h3 {
-    font-size: 28px;
+  .read-more{
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
-
-@media (max-width: 576px) {
-  /* Mobile phones */
-  .main-navigation ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-  
-  .main-navigation ul li a {
+@media (max-width: 947px) {
+  .menu-btn {
     display: block;
-    text-align: center;
-    padding: 8px;
+    z-index: 999;
   }
-  
-  .img img {
-    height: 250px;
+  .menu-btn i.active:before {
+    content: "\f00d";
   }
-  
-  .text-overlay h1 {
-    font-size: 1.8rem;
-  }
-  
-  .text-overlay h2 {
-    font-size: 2.2rem;
-  }
-  
-  .icons-links {
-    gap: 2rem;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .box-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .box-container div {
-    max-width: 100%;
-  }
-  
-  .text-overlay-2 {
-    margin-left: 150px;
-    top: 30%;
-  }
-  
-  .text-overlay-3 {
-    margin-left: 150px;
-    top: 10%;
-  }
-  
-  .text-overlay-3 h2 {
-    font-size: 2.5rem;
-  }
-  
-  .text-overlay-3 h3 {
-    font-size: 3.5rem;
-  }
-  
-  .imge img {
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
     width: 100%;
-    height: auto;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
   }
-  
-  .offers {
-    grid-template-columns: 1fr;
-    padding: 2rem;
+  .navbar .menu.active {
+    left: 0;
   }
-  
-  #services .text-overlay-4 h2 {
-    font-size: 3.5rem;
+  .navbar .menu li {
+    display: block;
   }
-  
-  #services .text-overlay-4 h3 {
-    font-size: 3rem;
-  }
-  
-  #services .text-overlay-4 h4 {
-    font-size: 2.5rem;
-  }
-  
-  .contact-us h2 {
-    font-size: 36px;
-  }
-  
-  .contact-us h3 {
-    font-size: 24px;
-  }
-  
-  .footer {
-    grid-template-columns: 1fr;
-    padding: 30px;
-  }
-  
-  .pa p {
-    font-size: 24px;
-  }
-  
-  .icons i {
-    font-size: 24px;
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
   }
 }
+@media (max-width: 500px) {
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+  .intro{
+    width: 100px;
+    .img{
+      img{
+        width: 300px;
+      }
+    }
+  }
+}
+/* Responsive Queries */
+@media (max-width: 991px) {
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
 
-@media (max-width: 400px) {
-  /* Small mobile devices */
-  .text-overlay-2 {
-    margin-left: 100px;
+  .menu-btn {
+    display: block;
   }
-  
-  .text-overlay-3 {
-    margin-left: 100px;
+
+  .navbar.active .menu {
+    display: flex;
   }
-  
+}
+@media (max-width: 600px) {
+  .img img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 95%;
+  }
+
   .text-overlay h1 {
     font-size: 1.5rem;
   }
-  
+
   .text-overlay h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  
+
+  .text-overlay p {
+    font-size: 0.9rem;
+  }
+
   .read-more {
     padding: 8px 16px;
-    font-size: 14px;
-  }
-  
-  .contact-us h2 {
-    font-size: 28px;
-  }
-  
-  .contact-us h3 {
-    font-size: 20px;
-  }
-  
-  .search-conatiner {
-    max-width: 300px;
+    font-size: 0.85rem;
   }
 }
