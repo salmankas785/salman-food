@@ -738,33 +738,62 @@ footer .contact a:hover {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin: 30px 0;
 }
 
-.icons i {
-  font-size: 32px;
-  color: #5a4a42; /* base brown tone */
-  transition: color 0.3s, transform 0.3s;
-  cursor: pointer;
+.social-link {
+  color: #555;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
 }
 
-/* Hover Effects */
-.icons i.fa-facebook:hover {
-  color: #3b5998; /* Facebook Blue */
-  transform: scale(1.2);
+.social-link:hover {
+  transform: translateY(-5px);
+  color: white;
 }
 
-.icons i.fa-whatsapp:hover {
-  color: #25d366; /* WhatsApp Green */
-  transform: scale(1.2);
+/* Individual icon colors */
+.fa-facebook:hover {
+  background: #1877f2;
+}
+.fa-whatsapp:hover {
+  background: #25d366;
+}
+.fa-twitter:hover {
+  background: #1da1f2;
+}
+.fa-instagram:hover {
+  background: #e1306c;
 }
 
-.icons i.fa-twitter:hover {
-  color: #1da1f2; /* Twitter Blue */
-  transform: scale(1.2);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .icons {
+    gap: 15px;
+  }
+  .social-link {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
 }
 
-.icons i.fa-instagram:hover {
-  color: #e1306c; /* Instagram Pink */
-  transform: scale(1.2);
+@media (max-width: 576px) {
+  .icons {
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
+
