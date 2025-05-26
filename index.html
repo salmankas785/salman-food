@@ -3,30 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <!-- <link rel="stylesheet" href="css/Responsie.css" /> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-free-6.7.2-web/css/all.min.css" />
+     <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/Responsie.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Food Resturant</title>
   </head>
   <body>
     <main>
-        <!-- Header Section -->
         <div class="max-width">
           <div class="scroll-up-btn">
-          <i class="fas fa-angle-up"></i>
+            <i class="fas fa-angle-up"></i>
           </div>
         </div>
+        <!-- navbar Section -->
         <nav class="navbar">
               <div class="max-width">
                   <div class="logo"><a href="index.html"><img src="img/bran-logo.png" alt="this is image" width="80px"
@@ -44,7 +39,7 @@
                   </div>
               </div>
         </nav>
-        <!-- Header section end -->
+        <!-- navbar section end -->
         <!-- Intro Section Start -->
         <!-- home Section start -->
       <section id="home" >
@@ -199,8 +194,10 @@
       <!-- Service Section start -->
       <section id="services" class="active">
           <div class="max-width">
-            <div class="images">
-              <img src="img/offer2.png" alt="offer" class="offer">
+            <div class="img-container">
+              <div class="images">
+                <img src="img/offer2.png" alt="offer" class="offer">
+              </div>
             </div>
           <div class="text-overlay-4">
             <div class="heading-wrapper">
@@ -213,14 +210,39 @@
       </section>
       <section>
         <div class="max-width">
-          <div class="offers">
-          <div class="offer-item"><img src="img/hot-dog.png" alt="hotdog" class="hotdog"><b>Hot Dog</b></img></div>
-          <div class="offer-item"><img src="img/burger.png" alt="burger" class="burger"><b>Burger</b></img></div>
-          <div class="offer-item"><img src="img/mc-chkn.png" alt="mc-chkn" class="mc-chkn"><b>MC-Chiken</b></img></div>
-          <div class="offer-item"><img src="img/cheese.png" alt="cheese" class="chesse"><b>Chesse Buger</b></img></div>
-          <div class="offer-item"><img src="img/frenc.png" alt="frenc" class="frenc"><b>French Fries</b></img></div>
-          <div class="offer-item"><img src="img/big-mac.png" alt="big-mac" class="big-mac"><b>Big-Mac</b></img></div>
-        </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper offers">
+              <div class="swiper-slide offer-item">
+                <img src="img/hot-dog.png" alt="hotdog" class="hotdog">
+                <b>Hot Dog</b>
+              </div>
+              <div class="swiper-slide offer-item">
+                <img src="img/burger.png" alt="burger" class="burger">
+                <b>Burger</b>
+              </div>
+              <div class="swiper-slide offer-item">
+                <img src="img/mc-chkn.png" alt="mc-chkn" class="mc-chkn">
+                <b>MC-Chiken</b>
+              </div>
+              <div class="swiper-slide offer-item">
+                <img src="img/cheese.png" alt="cheese" class="chesse">
+                <b>Chesse Buger</b>
+              </div>
+              <div class="swiper-slide offer-item">
+                <img src="img/frenc.png" alt="frenc" class="frenc">
+                <b>French Fries</b>
+              </div>
+              <div class="swiper-slide offer-item">
+                <img src="img/big-mac.png" alt="big-mac" class="big-mac">
+                <b>Big-Mac</b>
+              </div>
+            </div>
+            <!-- Add pagination if needed -->
+            <div class="swiper-pagination"></div>
+            <!-- Add navigation buttons if needed -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </section>
       <section>
@@ -295,4 +317,5 @@
     </main>
   </body>
   <script src="script.js"></script>
+  <script src="swiper-bundle.min.js"></script>
 </html>
